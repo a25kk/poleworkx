@@ -53,7 +53,9 @@
                             tal:content="item/Title" /></h2>
                       <p tal:content="item/Description" />
                       <tal:price tal:condition="exists:item/price">
-                        <span tal:replace="item/price" /> &euro;
+                        <span tal:define="price item/price;
+                                          pretty_price python:view.prettifyPrice(price);"
+                          tal:replace="pretty_price" />
                       </tal:price>
                       <a href="" class="link-more"
                         i18n:translate=""

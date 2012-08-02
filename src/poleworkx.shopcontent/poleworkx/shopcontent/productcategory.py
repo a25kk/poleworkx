@@ -9,6 +9,8 @@ from plone.app.textfield import RichText
 
 from Products.CMFCore.utils import getToolByName
 
+from kk.shopified.utils import format_price
+
 from plone.app.contentlisting.interfaces import IContentListing
 
 from poleworkx.shopcontent.product import IProduct
@@ -98,3 +100,6 @@ class View(grok.View):
                     row.append(cell)
             matrix.append(row)
         return matrix
+
+    def prettifyPrice(self, price):
+        return format_price(price)
