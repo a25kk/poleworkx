@@ -25,3 +25,4 @@ etc/**/*
 .DS_Store
 *.less
 src/kk.shopified
+known-good-versions.cfg
