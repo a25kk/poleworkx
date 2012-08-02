@@ -26,3 +26,8 @@ etc/**/*
 *.less
 src/kk.shopified
 known-good-versions.cfg
+src/plone.app.blocks
+src/plone.app.tiles
+src/plone.tiles
+src/kk.tiles
+src/sauna.reload
