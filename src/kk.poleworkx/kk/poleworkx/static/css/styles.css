@@ -73,6 +73,7 @@ h2 {
 }
 h3 {
   font-size: 1.25em;
+  margin: 0px 0px 20px 0px;
 }
 h4 {
   font-size: 1.25em;
@@ -585,7 +586,7 @@ dl.portlet ol {
 #content li,
 dl.portlet li {
   margin-bottom: 0.25em;
-  line-height: 1.5em;
+  line-height: 1.8em;
   display: list-item;
 }
 #content dt {
@@ -830,7 +831,7 @@ div.listingBar a:hover {
   border-color: #329fd7;
 }
 dl.portalMessage {
-  margin: 1em 0;
+  margin: 20px 0px 20px 10px;
   font-size: 80%;
   border: 1px solid #996;
   background-color: #ffffe3;
@@ -1729,7 +1730,7 @@ div.overlay .formControls a {
 .portletFooter {
   background: transparent !important;
   margin: 0;
-  padding: 0px 0px 5px 12px;
+  padding: 0px 0px 10px 12px;
   border: 0px;
   text-align: left;
   height: 20px;
