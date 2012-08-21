@@ -23,8 +23,8 @@
 
       <div tal:content="structure context/text/output" />
 
-      <div class="box-pricing">
-        <p><span tal:content="context/price" /> &euro;</p>
+      <div class="box-pricing" tal:define="price context/price">
+        <p><span tal:content="python:view.prettifyPrice(price)" /></p>
       </div>
 
       <form action="" method="post"

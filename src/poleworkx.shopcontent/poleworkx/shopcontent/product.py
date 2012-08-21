@@ -14,6 +14,8 @@ from plone.app.textfield import RichText
 from Products.statusmessages.interfaces import IStatusMessage
 from plone.uuid.interfaces import IUUID
 
+from kk.shopified.utils import format_price
+
 from kk.shopified.interfaces import ICartUpdaterUtility
 
 from poleworkx.shopcontent import MessageFactory as _
@@ -76,3 +78,6 @@ class View(grok.View):
                     type="info")
                 return_url = context.absolute_url() + '/@@cart'
                 return self.request.response.redirect(return_url)
+
+    def prettifyPrice(self, price):
+        return format_price(price)
