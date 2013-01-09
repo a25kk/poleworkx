@@ -272,6 +272,11 @@ div.position-0 {
   z-index: 100000;
   position: relative;
 }
+* + html .carousel-pager {
+  margin: -40px 0px 0px 20px;
+  z-index: 100000;
+  position: absolute !important;
+}
 .carousel-pager-item {
   font-size: 0.6em;
   text-decoration: none;
@@ -717,7 +722,7 @@ table.plain {
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #ddd;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 table.invisible td,
 table.invisible th,
