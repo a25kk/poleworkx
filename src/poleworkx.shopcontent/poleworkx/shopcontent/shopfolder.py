@@ -3,7 +3,9 @@ from five import grok
 from zope import schema
 from Acquisition import aq_inner
 
-from plone.directives import dexterity, form
+from plone.directives import form
+from plone.dexterity.content import Container
+
 from plone.app.textfield import RichText
 from z3c.relationfield.schema import RelationList, RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
@@ -46,7 +48,7 @@ class IShopFolder(form.Schema):
     )
 
 
-class ShopFolder(dexterity.Container):
+class ShopFolder(Container):
     grok.implements(IShopFolder)
 
 

@@ -1,8 +1,9 @@
 import math
 from five import grok
 from Acquisition import aq_inner
-from plone.directives import dexterity, form
+from plone.directives import form
 
+from plone.dexterity.content import Container
 from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.namedfile.field import NamedBlobImage
 from plone.app.textfield import RichText
@@ -34,7 +35,7 @@ class IProductCategory(form.Schema, IImageScaleTraversable):
     )
 
 
-class ProductCategory(dexterity.Container):
+class ProductCategory(Container):
     grok.implements(IProductCategory)
 
 

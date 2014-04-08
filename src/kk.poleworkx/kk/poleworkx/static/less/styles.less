@@ -387,9 +387,9 @@ div.position-0 {
 #main-nav li a {
 	display: inline-block;
 	padding: 0px 10px 15px 15px;
-	background: url(../images/bullet.png) no-repeat 0px 3px transparent;
+	background: url(../images/bullet.png) no-repeat 0px 0px transparent;
 	white-space: normal;
-	font-size: 1em;
+	font-size: 0.8em;
 	text-transform: uppercase;
 	color: @navColor;
 	margin: 0px auto;
@@ -399,8 +399,13 @@ div.position-0 {
 	transition:color 0.5s ease-in;
 }
 
-#main-nav #portaltab-ueber-poleworkx a {
-	background: none;
+#main-nav {
+
+    #portaltab-ueber-poleworkx {
+        a {
+            background: none !important;
+        }
+    }
 }
 
 #main-nav .selected a,
@@ -453,6 +458,11 @@ div.position-0 {
 	text-transform: none;
 	color: @navColor;
 	margin: 0px auto;
+}
+
+
+#sub #subnav-massage-termine a {
+    background: none;
 }
 
 #sub .selected a,
@@ -2053,5 +2063,9 @@ span.portletItemDetails {
 	behavior: url(++theme++kk.poleworkx/js/PIE.htc);
 	position: relative;
 	background: #B3E3F4;
+}
+
+#edit_form_behandlungsdatum-und-uhrzeit_0_popup img {
+    display: none;
 }
 

@@ -156,25 +156,18 @@ div.position-0 {
 #inner-wrapper {
   background: #b3e3f4;
   /* Old browsers */
-
   background: -moz-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* FF3.6+ */
-
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b3e3f4), color-stop(52%, #ecf3f6));
   /* Chrome,Safari4+ */
-
   background: -webkit-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* Chrome10+,Safari5.1+ */
-
   background: -o-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* Opera 11.10+ */
-
   background: -ms-linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* IE10+ */
-
   background: linear-gradient(top, #b3e3f4 0%, #ecf3f6 52%);
   /* W3C */
-
   width: 960px;
   margin: 20px auto 20px auto !important;
   -webkit-border-radius: 5px !important;
@@ -355,9 +348,9 @@ div.position-0 {
 #main-nav li a {
   display: inline-block;
   padding: 0px 10px 15px 15px;
-  background: url(../images/bullet.png) no-repeat 0px 3px transparent;
+  background: url(../images/bullet.png) no-repeat 0px 0px transparent;
   white-space: normal;
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
   color: #ffffff;
   margin: 0px auto;
@@ -367,7 +360,7 @@ div.position-0 {
   transition: color 0.5s ease-in;
 }
 #main-nav #portaltab-ueber-poleworkx a {
-  background: none;
+  background: none !important;
 }
 #main-nav .selected a,
 #main-nav a:hover {
@@ -412,6 +405,9 @@ div.position-0 {
   text-transform: none;
   color: #ffffff;
   margin: 0px auto;
+}
+#sub #subnav-massage-termine a {
+  background: none;
 }
 #sub .selected a,
 #sub a:hover {
@@ -2011,4 +2007,7 @@ dd.portletItem .navTreeItem a {
   behavior: url(++theme++kk.poleworkx/js/PIE.htc);
   position: relative;
   background: #B3E3F4;
+}
+#edit_form_behandlungsdatum-und-uhrzeit_0_popup img {
+  display: none;
 }

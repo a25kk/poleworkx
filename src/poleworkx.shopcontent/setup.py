@@ -28,6 +28,7 @@ setup(name='poleworkx.shopcontent',
           'setuptools',
           'plone.app.dexterity',
           'plone.namedfile [blobs]',
+          'plone.app.dexterity [grok,relations]'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

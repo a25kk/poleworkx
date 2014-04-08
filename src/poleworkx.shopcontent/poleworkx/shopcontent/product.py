@@ -1,12 +1,13 @@
 from five import grok
 from Acquisition import aq_inner
 from AccessControl import Unauthorized
-from plone.directives import dexterity, form
+from plone.directives import form
 
 from zope import schema
 from zope.component import getUtility
 from zope.component import getMultiAdapter
 
+from plone.dexterity.content import Container
 from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.namedfile.field import NamedBlobImage
 from plone.app.textfield import RichText
@@ -45,7 +46,7 @@ class IProduct(form.Schema, IImageScaleTraversable):
     )
 
 
-class Product(dexterity.Container):
+class Product(Container):
     grok.implements(IProduct)
 
 
