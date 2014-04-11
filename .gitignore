@@ -24,10 +24,12 @@ var
 etc/**/*
 .DS_Store
 *.less
+fabfile.py
 src/kk.shopified
 known-good-versions.cfg
 src/plone.app.blocks
 src/plone.app.tiles
 src/plone.tiles
 src/kk.tiles
+src/ade25.*
 src/sauna.reload
