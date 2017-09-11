@@ -9,6 +9,7 @@ develop-eggs
 coverage
 downloads
 eggs
+.eggs
 fake-eggs
 parts
 dist
